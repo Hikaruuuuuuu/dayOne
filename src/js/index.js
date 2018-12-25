@@ -25,7 +25,7 @@ Show.prototype.drawing = function(){
         }) 
     }
 
-    // somthing bscroll
+    //  bscroll
     var tourContainer = document.getElementsByClassName('tour-container')[0];
     this.ajax('./data/somthing.json',scrolls)
     function scrolls(data){
@@ -36,6 +36,17 @@ Show.prototype.drawing = function(){
         })
         tourContainer.innerHTML = html;
     }
+
+    var somthing = document.getElementsByClassName('somthing')[0];
+    this.ajax('./data/somthing.json',som)
+    function som(data){
+        var html = "";
+        data.data.poilist.forEach((file)=>{
+            html += `<dl class="what"><dt><img src=${file.pic_url}></dt><dd>${file.name}</dd></dl>`
+        })
+        somthing.innerHTML = html;
+    }
+    
 
 }
 
