@@ -6,6 +6,7 @@ Show.prototype.init = function(){
 
     this.drawing()
     this.bscroll()
+    this.clicks()
 }
 
 Show.prototype.drawing = function(){
@@ -76,4 +77,17 @@ Show.prototype.bscroll = function(){
     var scrollTwo = new BScroll('.tour',{
         scrollX: true
     })
+}
+
+Show.prototype.clicks = function(){
+    var main = document.getElementsByClassName(main)[0];
+
+    var icons = document.getElementsByClassName('icons');
+
+    for (let index = 0; index < icons.length; index++) {
+        const element = icons[index];
+        element.onclick = function(){
+            console.log(index)
+        }
+    }
 }
