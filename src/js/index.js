@@ -62,5 +62,7 @@ Show.prototype.swiper = function(){
 
 Show.prototype.bscroll = function(){
     var scrollOne = new BScroll('.main')
-   
+    var scrollTwo = new BScroll('.tour',{
+        scrollX: true
+    })
 }

@@ -83,12 +83,13 @@ html,body{
                 
 
                 .tour-container{
+                    width: 2000px;
                     white-space: nowrap;
         
                     .som{
                         display: inline-block; 
-                        width: 30%; 
-                        margin: 5% 3% 0;
+                        width: 100px; 
+                        margin: 1% 1% 0;
                         text-align: center;     
 
                         img{
