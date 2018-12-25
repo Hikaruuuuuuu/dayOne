@@ -72,6 +72,35 @@ html,body{
                 }
 
             }
+
+            .tour{
+                width: 90%;
+                margin-left: 5%;
+                height: 1.3rem;
+                background: rgb(226, 71, 71);
+                border-radius: 10px;
+                overflow-x: auto;
+                
+
+                .tour-container{
+                    white-space: nowrap;
+        
+                    .som{
+                        display: inline-block; 
+                        width: 30%; 
+                        margin: 5% 3% 0;
+                        text-align: center;     
+
+                        img{
+                            width: 100%;
+                        }
+
+                        dd{
+                            font-size: .1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
