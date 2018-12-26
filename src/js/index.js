@@ -88,6 +88,7 @@ Show.prototype.clicks = function(){
         const element = icons[index];
         element.onclick = function(){
             console.log(index)
-        }
+            
+        } 
     }
 }
